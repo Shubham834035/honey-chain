@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --honey-amber: #F4A623;
+    --honey-brown: #6B3F20;
+    --warm-cream: #FFF9ED;
+    --forest-green: #2F6B45;
+    --charcoal: #1F2937;
+  }
+
+  body {
+    background-color: #FAFAF7;
+    color: #1F2937;
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  }
+}
+
+/* Custom Honey Accent Utilities */
+.honey-gradient {
+  background: linear-gradient(135deg, #F4A623 0%, #D97706 100%);
+}
+
+.brown-gradient {
+  background: linear-gradient(135deg, #6B3F20 0%, #452410 100%);
+}
+
+.forest-gradient {
+  background: linear-gradient(135deg, #2F6B45 0%, #1E472D 100%);
+}
+
+.cream-card {
+  background: #FFFDF9;
+  border: 1px solid rgba(244, 166, 35, 0.18);
+  box-shadow: 0 4px 20px -2px rgba(107, 63, 32, 0.05);
+}
+
+/* Smooth Transitions */
+* {
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
