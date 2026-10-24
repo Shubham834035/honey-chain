@@ -22,6 +22,10 @@ export const metadata: Metadata = {
     'fssai honey purity',
     'iot beehive monitoring',
   ],
+ 
+verification: {
+    google: "7eptMjGjCJnYqYozZtU1FcUsjLWjLV0Wq5S5z79U1J09o",
+  },
 };
 
 export default function RootLayout({
